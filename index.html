@@ -3,11 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy 30th Birthday, Nikki!</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
     <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>This Page is Under Construction until February 15th</h1>
+    <h1> Happy 30th Birthday Nikki!</h1>
+    <div class='game-bar'>
+        <div id="play-type">
+            <label for="h-v-h">2 Player Game</label>
+            <input type="radio" name="play-type" id="h-v-h" value="h-v-h" checked>
+            <label for="h-v-c">1 Player vs Computer</label>
+            <input type="radio" name="play-type" id="h-v-c" value="h-v-c">
+        </div>
+
+        <div class="left-bar">
+            <label for="p1-name">Player 1 Name:</label>
+            <input type="text" name="p1-name" id="p1-name" placeholder="Fire Nikki">
+            <div>
+                <p>Choose Icon:</p>
+                <label for="p1-X">X</label>
+                <input type="radio" name="p1-icon" id="p1-X" value="X">
+                <label for="p1-smiley"><img class ="example nikki-icon" src="./media/fire-nikki.png"></label>
+                <input type="radio" name="p1-icon" id="p1-smiley" value="fire-nikki" checked>
+                <label for="p1-fire"><img class ="example" src="./media/fire.png"></label>
+                <input type="radio" name="p1-icon" id="p1-fire" value="fire">
+            </div>
+        </div>
+
+        <div class="right-bar">
+            <label for="p2-name">Player 2 Name:</label>
+            <input type="text" name="p2-name" id="p2-name" placeholder="Water Nikki">
+            <div>
+                <p>Choose Icon:</p>
+                <label for="p2-O">O</label>
+                <input type="radio" name="p2-icon" id="p2-O" value="O">
+                <label for="p2-frowny"><img class ="example nikki-icon" src="./media/water-nikki.png"></label>
+                <input type="radio" name="p2-icon" id="p2-frowny" value="water-nikki" checked>
+                <label for="p2-water"><img class ="example" src="./media/water.png"></label>
+                <input type="radio" name="p2-icon" id="p2-water" value="water">
+            </div>
+        </div>
+        <button id="new-game">New Game</button>
+    </div>
+    <div class="container">
+        <h2 class="turn"></h2>
+        <div class="board"></div>
+    </div>
+    
 </body>
 </html>
